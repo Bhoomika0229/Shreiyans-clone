@@ -1,8 +1,8 @@
 from django.shortcuts import render, redirect, get_object_or_404
-from .models import Course, UserProfile
+from .models import Course , UserProfile
 
 # ================= HOME =================
-def home(request):
+def home(request) :
     courses = Course.objects.all()
     return render(request, 'home.html', {'courses': courses})
 
