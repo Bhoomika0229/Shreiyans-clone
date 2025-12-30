@@ -1,0 +1,123 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Home | Sheryians{% endblock %}
+
+{% block content %}
+
+<section class="courses">
+    <h1 class="courses-title">Courses Offered.</h1>
+
+    <div class="courses-container">
+
+        <div class="course-card">
+            <img src="{% static 'images/course2.jpeg' %}" class="course-img">
+            <div class="course-body">
+                <h2>Data Science & Analytics with GenAI</h2>
+                <span class="tag">HINGLISH</span>
+                <p class="discount-text">Limited Time Discount</p>
+                <div class="price-box">
+                    <span class="price">₹ 6999</span>
+                    <span class="old-price">₹ 15000</span>
+                    <span class="off">53% OFF</span>
+                </div>
+            </div>
+             <a href="/course/1/" class="details-btn" style="position:relative; z-index:9999;">
+        View Details
+    </a>
+        </div>
+
+        <div class="course-card">
+            <img src="{% static 'images/course1.jpeg' %}" class="course-img">
+            <div class="course-body">
+                <h2>Job Ready AI Powered Cohort</h2>
+                <span class="tag red">LIVE BATCH</span>
+                <span class="tag">HINGLISH</span>
+                <p class="discount-text">Early Bird Discount</p>
+                <div class="price-box">
+                    <span class="price">₹ 5999 (+GST)</span>
+                    <span class="old-price">₹ 11999</span>
+                    <span class="off">50% OFF</span>
+                </div>
+            </div>
+             <a href="/course/2/" class="details-btn" style="position:relative; z-index:9999;">
+        View Details
+    </a>
+        </div>
+
+        <div class="course-card">
+            <img src="{% static 'images/course3.jpeg' %}" class="course-img">
+            <div class="course-body">
+                <h2>DSA Domination Cohort</h2>
+                <span class="tag red">LIVE BATCH</span>
+                <span class="tag">HINGLISH</span>
+                <p class="discount-text">Limited Time Discount</p>
+                <div class="price-box">
+                    <span class="price">₹ 6600 (+GST)</span>
+                    <span class="old-price">₹ 7500</span>
+                    <span class="off">12% OFF</span>
+                </div>
+            </div>
+             <a href="/course/3/" class="details-btn" style="position:relative; z-index:9999;">
+        View Details
+    </a>
+        </div>
+
+        <div class="course-card">
+            <img src="{% static 'images/course4.JPG' %}" class="course-img">
+            <div class="course-body">
+                <h2>Web + DSA + Aptitude Cohort</h2>
+                <span class="tag red">LIVE BATCH</span>
+                <span class="tag">HINGLISH</span>
+                <p class="discount-text">Limited Time Discount</p>
+                <div class="price-box">
+                    <span class="price">₹ 5999 (+GST)</span>
+                    <span class="old-price">₹ 11999</span>
+                    <span class="off">50% OFF</span>
+                </div>
+            </div>
+             <a href="/course/4/" class="details-btn" style="position:relative; z-index:9999;">
+        View Details
+    </a>
+        </div>
+
+        <div class="course-card">
+            <img src="{% static 'images/course5.jpg' %}" class="course-img">
+            <div class="course-body">
+                <h2>Three.js Domination</h2>
+                <span class="tag">HINDI</span>
+                <p class="discount-text">Limited Time Discount</p>
+                <div class="price-box">
+                    <span class="price">₹ 2499 (+GST)</span>
+                    <span class="old-price">₹ 3500</span>
+                    <span class="off">29% OFF</span>
+                </div>
+            </div>
+             <a href="/course/5/" class="details-btn" style="position:relative; z-index:9999;">
+        View Details
+    </a>
+        </div>
+
+        <div class="course-card">
+            <img src="{% static 'images/course6.jpeg' %}" class="course-img">
+            <div class="course-body">
+                <h2>Java & DSA Domination</h2>
+                <span class="tag">HINGLISH</span>
+                <p class="discount-text">Limited Time Discount</p>
+                <div class="price-box">
+                    <span class="price">₹ 4999 (+GST)</span>
+                    <span class="old-price">₹ 9999</span>
+                    <span class="off">50% OFF</span>
+                </div>
+            </div>
+             <a href="/course/6/" class="details-btn" style="position:relative; z-index:9999;">
+        View Details
+    </a>
+        </div>
+
+    </div>
+</section>
+
+{% endblock %}
+
+

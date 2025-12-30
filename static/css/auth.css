@@ -1,0 +1,50 @@
+body {
+background:black;
+font-family:Arial;
+color:white;
+}
+
+.box {
+width:380px;
+margin:120px auto;
+text-align:center;
+}
+
+input {
+width:100%;
+padding:12px;
+margin:10px 0;
+background:#111;
+border:1px solid #333;
+color:white;
+}
+
+button {
+width:100%;
+padding:12px;
+background:#00d084;
+border:none;
+font-weight:bold;
+cursor:pointer;
+}
+
+.google {
+display:block;
+padding:12px;
+border:1px solid #444;
+margin-top:15px;
+color:white;
+text-decoration:none;
+}
+
+.new {
+display:block;
+margin-top:15px;
+color:#00d084;
+text-decoration:none;
+}
+
+.or {
+margin:20px 0;
+color:gray;
+}

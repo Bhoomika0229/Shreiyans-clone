@@ -1,0 +1,185 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+/* Background like screenshot */
+body {
+    background: #000;
+    color: white;
+    overflow-x: hidden;
+}
+
+/* ================= NAVBAR ================= */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 70px;
+    background: transparent;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo {
+    width: 55px;
+}
+
+.brand {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 18px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 18px;
+    font-size: 18px;
+    transition: .3s;
+}
+
+.nav-links a:hover,
+.nav-links .active {
+    opacity: 0.7;
+}
+
+.sign-btn {
+    background: #e56936;
+    padding: 12px 32px;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    color: white;
+}
+
+/* ================= HERO SECTION ================= */
+.hero-container {
+    display: flex;
+    padding: 80px 70px;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* LEFT TEXT */
+.subtitle {
+    color: #ff7648;
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin-bottom: 18px;
+}
+
+.title {
+    font-size: 58px;
+    line-height: 1.2;
+    font-weight: 400;
+    margin-bottom: 22px;
+}
+
+.desc {
+    font-size: 18px;
+    opacity: .8;
+    margin-bottom: 28px;
+}
+
+.price {
+    font-size: 28px;
+    margin-bottom: 35px;
+}
+
+.amount {
+    color: #ff6c2f;
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+.cut {
+    text-decoration: line-through;
+    opacity: .6;
+    margin-left: 14px;
+}
+
+.gst {
+    opacity: .7;
+    margin-left: 6px;
+}
+
+/* BUTTONS */
+.btn-row {
+    display: flex;
+    gap: 18px;
+}
+
+.buy-btn {
+    background: #db6631;
+    color: white;
+    border: none;
+    padding: 16px 40px;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.syllabus-btn {
+    background: transparent;
+    color: white;
+    border: 1.5px solid #555;
+    padding: 16px 40px;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* ================= RIGHT VIDEO ================= */
+.hero-right {
+    width: 480px;
+}
+
+.video-card {
+    width: 100%;
+    height: 270px;
+    border-radius: 22px;
+    overflow: hidden;
+    border: 2px solid #2b2b2b;
+    background: #111;
+}
+
+.tag-row {
+    display: flex;
+    gap: 12px;
+    margin-top: 18px;
+}
+
+.tag {
+    background: #1c1c1c;
+    padding: 8px 18px;
+    border-radius: 20px;
+    border: 1px solid #333;
+    font-size: 14px;
+    opacity: .9;
+}
+
+/* Responsive Tweaks */
+@media(max-width: 1000px){
+    .hero-container {
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .hero-right {
+        margin-top: 50px;
+        width: 100%;
+        max-width: 520px;
+    }
+}
+
+

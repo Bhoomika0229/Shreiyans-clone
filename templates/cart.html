@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block title %}Cart{% endblock %}
+
+{% block content %}
+<h1 style="margin:30px">Your Cart</h1>
+
+{% if courses %}
+    {% for course in courses %}
+        <div style="margin:20px; padding:20px; background:#111; border-radius:10px;">
+            <h2>{{ course.title }}</h2>
+            <p>₹ {{ course.price }}</p>
+
+            <a href="{% url 'remove_from_cart' course.id %}">
+                <button class="details-btn">Remove</button>
+            </a>
+        </div>
+    {% endfor %}
+{% else %}
+    <p style="margin:30px;">Cart is empty</p>
+{% endif %}
+
+{% endblock %}

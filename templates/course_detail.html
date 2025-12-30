@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}{{ course.title }} | Sheryians{% endblock %}
+
+{% block content %}
+
+<section class="courses">
+    <h1 class="courses-title">{{ course.title }}</h1>
+
+    <div class="courses-container">
+
+        <div class="course-card" style="width:100%;">
+            <img src="{% static 'images/course1.jpeg' %}" class="course-img">
+
+            <div class="course-body">
+                <h2>{{ course.title }}</h2>
+
+                <span class="tag">{{ course.language }}</span>
+
+                {% if course.is_live %}
+                    <span class="tag red">LIVE BATCH</span>
+                {% endif %}
+
+                <p class="discount-text">{{ course.offer_text }}</p>
+
+                <div class="price-box">
+                    <span class="price">₹ {{ course.price }}</span>
+                    <span class="old-price">₹ {{ course.old_price }}</span>
+                </div>
+            </div>
+
+            <a href="{% url 'add_to_cart' course.id %}">
+    <button class="details-btn">Buy Now</button>
+</a>
+
+        </div>
+
+    </div>
+</section>
+
+{% endblock %}
