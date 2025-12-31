@@ -8,9 +8,7 @@ class UserProfile(models.Model):
 
     def __str__(self):
         return self.phone
-
-
-# ---------------- COURSE MODEL ----------------
+        
 class Course(models.Model):
     title = models.CharField(max_length=200)
     image = models.ImageField(upload_to='courses/')
@@ -24,9 +22,6 @@ class Course(models.Model):
 
     def __str__(self):
         return self.title
-
-
-# ---------------- CART MODEL ----------------
 class Cart(models.Model):
     user = models.ForeignKey(UserProfile, on_delete=models.CASCADE)
     course = models.ForeignKey(Course, on_delete=models.CASCADE)
